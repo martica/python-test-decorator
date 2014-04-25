@@ -1,3 +1,7 @@
+Mockup of an example from a tweet. https://twitter.com/raymondh/statuses/459495133075877888
+
+Using python decorators to define tests for a function.
+
     > python3 main.py
     √ cube(3) == 27
     √ Called cube(2, 3), Caught expected exception. TypeError: cube() takes 1 positional argument but 2 were given

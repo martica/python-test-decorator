@@ -1,3 +1,3 @@
-from TestDecorator import cube
+from cube import cube
 
-print( cube( 10 ) )
+print(cube(10))

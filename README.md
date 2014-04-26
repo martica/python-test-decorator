@@ -22,7 +22,7 @@ Using python decorators to define tests for a function.
 
 Output:
 
-    > python3 main.py
+    > python3 cube.py
     √ cube(3) == 27
     √ Called cube(2, 3), Caught expected exception. TypeError: cube() takes 1 positional argument but 2 were given
     X Called cube(10), expected TypeError, Got 1000 instead.

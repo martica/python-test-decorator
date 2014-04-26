@@ -14,6 +14,13 @@ def exception_as_string(exception):
 
 def test(inputs, expected):
     def decorate(f):
+        if f.__globals__["__name__"] != "__main__":
+            # If the tested function is not part of the current main
+            # module, the decorators are being applied to the tested
+            # function in an import context. Running tests during import
+            # would generate a lot of noise.
+            return f
+
         input_string = ', '.join([repr(x) for x in inputs])
         functionString = "{}({})".format(f.__name__, input_string)
         try:

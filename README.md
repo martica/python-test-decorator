@@ -29,6 +29,3 @@ Output:
     X Called cube([]), expected ZeroDivisionError, Caught unexpected exception. TypeError: can't multiply sequence by non-int of type 'list'
     X Called cube('a'), expected 1000, Caught unexpected exception. TypeError: can't multiply sequence by non-int of type 'str'
     X cube(2) != 0.125. Got 8 instead.
-    1000
-    
-
